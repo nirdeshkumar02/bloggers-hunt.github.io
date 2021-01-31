@@ -1,0 +1,50 @@
+<%- include("partials/header"); -%>
+
+<h1>Contact</h1>
+<p> <%= contactContent %>  </p>
+
+
+<form action="/contact", method="POST" >
+    
+    <div class="form-group">
+        <label>Name</label>
+        <input class="form-control" type="text" name="name" >
+        <label>Mobile</label>
+        <input class="form-control" type="phone" name="phone" >
+        <label>Email</label>
+        <input class="form-control" type="email" name="email" >
+        <label>Message</label>
+        <textarea class="form-control" name="message" cols="30" rows="5"></textarea>
+    </div>
+    
+    <button class="btn btn-primary" type="submit" name="button">Submit</button>
+
+</form>
+
+<%- include("partials/footer"); -%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include("partials/footer"); -%>
